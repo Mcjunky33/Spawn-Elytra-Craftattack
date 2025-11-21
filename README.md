@@ -1,4 +1,10 @@
-# SpawnElytraCraftattack English Description
+![commands](https://cdn.modrinth.com/data/cached_images/8c136b9b482097332efbbd671b10b744962b3b3c_0.webp)
+
+![commands2](https://cdn.modrinth.com/data/cached_images/9f810862c64dafefa719141f5ae5f1e6ddaf06d0_0.webp)
+
+![Elytra Flight](https://cdn.modrinth.com/data/cached_images/16ff528ca1600f08ed54c50fb633ab5cbecab05c.gif)
+
+ # SpawnElytraCraftattack English Description
 
 **SpawnElytraCraftattack** is a tool that allows you to easily define areas using commands. In these areas, players can fly with an Elytra **without actually owning one**. This allows for "Start Island"-style gameplay similar to CraftAttack, a German Minecraft streamer/Youtuber project.
 
@@ -15,10 +21,6 @@ The Fabric mod works on both client and server side.
 - **Dynamic Reset:** Landing, water, or riding resets boosts automatically.
 - **Persistent Configuration:** All areas are saved in `config/elytra_areas.json`.
 - **Compatible:** Supports Survival, Adventure, and Creative (Creative/Spectator is ignored).
-
----
-
-![Elytra flight](https://cdn.modrinth.com/data/cached_images/16ff528ca1600f08ed54c50fb633ab5cbecab05c.gif)#
 
 ---
 
@@ -100,7 +102,7 @@ Jede Area kann individuelle **MaxBoosts** haben, um die Anzahl der Boosts pro Sp
 
 ---
 
-## 🛠️ Befehle
+## Befehle
 
 Alle Befehle erfordern **Admin-Rechte**.
 
