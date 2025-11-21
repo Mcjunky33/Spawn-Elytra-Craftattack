@@ -1,4 +1,68 @@
-# SpawnElytraCraftattack – 
+# SpawnElytraCraftattack English Description
+
+**SpawnElytraCraftattack** is a tool that allows you to easily define areas using commands. In these areas, players can fly with an Elytra **without actually owning one**. This allows for "Start Island"-style gameplay similar to CraftAttack, a German Minecraft streamer/Youtuber project.
+
+The Fabric mod works on both client and server side.
+
+---
+
+## Features
+
+- **Automatic Elytra Flight:** Players automatically start flying with Elytra when in the air.
+- **Boost System:** Players can trigger a boost using Sneak-Tap (default Shift), similar to a firework rocket.
+- **Flexible Flight Areas:** Define custom flight zones – radius, box, or around the world spawn.
+- **Max Boosts per Area:** Each Elytra area can have its own boost limit.
+- **Dynamic Reset:** Landing, water, or riding resets boosts automatically.
+- **Persistent Configuration:** All areas are saved in `config/elytra_areas.json`.
+- **Compatible:** Supports Survival, Adventure, and Creative (Creative/Spectator is ignored).
+
+---
+
+## Elytra Areas
+
+There are three types of areas:
+
+| Type           | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Worldspawn** | Circle around the world spawn with a configurable radius.                  |
+| **Radius**     | Circular area at any chosen position.                                      |
+| **Box**        | Rectangular area defined by two corner points.                              |
+
+Each area can have individual **MaxBoosts** to limit the number of boosts per player.
+
+---
+
+## 🛠️ Commands
+
+All commands require **admin permissions**.
+
+### Area Management
+
+```bash
+# Add an area around worldspawn
+/selytra addarea <name> worldspawn <radius>
+
+# Add a radius-based area
+/selytra addarea <name> radius <x> <y> <z> <radius>
+
+# Add a box area
+/selytra addarea <name> box <x1> <y1> <z1> <x2> <y2> <z2>
+
+# Edit an existing area
+/selytra editarea <name> worldspawn <radius>
+/selytra editarea <name> radius <x> <y> <z> <radius>
+/selytra editarea <name> box <x1> <y1> <z1> <x2> <y2> <z2>
+
+# Set the maximum number of boosts for an area
+/selytra editmaxboosts <name> <value>
+
+# Remove an existing area
+/selytra removearea <name>
+
+# List all defined areas
+/selytra listarea
+```
+# SpawnElytraCraftattack Deutsche Beschreibung
 
 **SpawnElytraCraftattack** ist ein tool mitdem man einfach per Command Areas festlegen kann. In diesen Areas ist es möglich Elytra zu fliegen ohne eine zu besitzen. (es ermöglicht so eine Start Island wie bei CraftAttack ein Deutsches Streamer/Youtuber Projekt in Minecraft)
 
@@ -61,3 +125,4 @@ Alle Befehle erfordern **Admin-Rechte**.
 
 # Listet alle definierten Areas
 /selytra listarea
+```
