@@ -18,6 +18,10 @@ The Fabric mod works on both client and server side.
 
 ---
 
+![Elytra flight](https://cdn.modrinth.com/data/cached_images/16ff528ca1600f08ed54c50fb633ab5cbecab05c.gif)#
+
+---
+
 ## Elytra Areas
 
 There are three types of areas:
