@@ -1,10 +1,12 @@
-# SpawnElytraCraftattack – Ultimatives Elytra-Flug-System für deinen Server
+# SpawnElytraCraftattack – 
 
-**SpawnElytraCraftattack** ist eine leistungsstarke Fabric-Mod, die das Elytra-Fliegen auf deinem Minecraft-Server revolutioniert. Sie ermöglicht es, spezielle **Elytra-Areas** zu definieren, in denen Spieler automatisch starten können, Boosts erhalten und dynamische Flugmechaniken genießen – perfekt für Abenteuer- oder Minigame-Server!
+**SpawnElytraCraftattack** ist ein tool mitdem man einfach per Command Areas festlegen kann. In diesen Areas ist es möglich Elytra zu fliegen ohne eine zu besitzen. (es ermöglicht so eine Start Island wie bei CraftAttack ein Deutsches Streamer/Youtuber Projekt in Minecrft)
+
+Die Fabric Mod Funktioniert Client seitig und Server seitig.
 
 ---
 
-## 🌟 Funktionen
+## Funktionen
 
 - **Automatisches Elytra-Fliegen:** Spieler starten automatisch mit Elytra, sobald sie in der Luft sind.
 - **Boost-System:** Spieler können mit Sneak-Tap einen Boost auslösen, ähnlich einer Feuerwerksrakete.
@@ -16,7 +18,7 @@
 
 ---
 
-## ⚡ Elytra-Areas
+## Elytra-Areas
 
 Es gibt drei Arten von Areas:
 
@@ -32,7 +34,7 @@ Jede Area kann individuelle **MaxBoosts** haben, um die Anzahl der Boosts pro Sp
 
 ## 🛠️ Befehle
 
-Alle Befehle erfordern **Admin-Rechte** (Permission Level 2).
+Alle Befehle erfordern **Admin-Rechte**.
 
 ### Area Management
 
