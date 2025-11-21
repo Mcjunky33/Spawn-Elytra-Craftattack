@@ -1,6 +1,6 @@
 # SpawnElytraCraftattack – 
 
-**SpawnElytraCraftattack** ist ein tool mitdem man einfach per Command Areas festlegen kann. In diesen Areas ist es möglich Elytra zu fliegen ohne eine zu besitzen. (es ermöglicht so eine Start Island wie bei CraftAttack ein Deutsches Streamer/Youtuber Projekt in Minecrft)
+**SpawnElytraCraftattack** ist ein tool mitdem man einfach per Command Areas festlegen kann. In diesen Areas ist es möglich Elytra zu fliegen ohne eine zu besitzen. (es ermöglicht so eine Start Island wie bei CraftAttack ein Deutsches Streamer/Youtuber Projekt in Minecraft)
 
 Die Fabric Mod Funktioniert Client seitig und Server seitig.
 
