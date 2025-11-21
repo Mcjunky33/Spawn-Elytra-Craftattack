@@ -38,7 +38,7 @@ Each area can have individual **MaxBoosts** to limit the number of boosts per pl
 
 ---
 
-## 🛠️ Commands
+## Commands
 
 All commands require **admin permissions**.
 
