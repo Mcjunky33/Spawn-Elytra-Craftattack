@@ -9,7 +9,7 @@ Die Fabric Mod Funktioniert Client seitig und Server seitig.
 ## Funktionen
 
 - **Automatisches Elytra-Fliegen:** Spieler starten automatisch mit Elytra, sobald sie in der Luft sind.
-- **Boost-System:** Spieler können mit Sneak-Tap einen Boost auslösen, ähnlich einer Feuerwerksrakete.
+- **Boost-System:** Spieler können mit Sneak-Tap (Standard Shift) einen Boost auslösen, ähnlich einer Feuerwerksrakete.
 - **Flexible Flugbereiche:** Definiere beliebige Flugzonen – Radius, Box oder um den Worldspawn herum.
 - **Maximale Boosts pro Area:** Jede Elytra-Area kann eigene Boost-Limits haben.
 - **Dynamische Rücksetzung:** Landung, Wasser oder Reiten setzt Boosts automatisch zurück.
