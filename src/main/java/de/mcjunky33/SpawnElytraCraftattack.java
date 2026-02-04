@@ -116,7 +116,6 @@ public class SpawnElytraCraftattack implements ModInitializer {
         UUID uuid = player.getUUID();
         PlayerFlightData flightData = PLAYER_FLIGHTS.get(uuid);
 
-        // 1. Prüfen, ob der Spieler in einer Area ist
         ElytraArea currentArea = null;
         for (ElytraArea area : AREAS.values()) {
             if (area.contains(player)) {
@@ -129,26 +128,22 @@ public class SpawnElytraCraftattack implements ModInitializer {
         boolean inWater = player.isInWater() || player.isInLava();
         boolean isRiding = player.getVehicle() != null;
 
-        // 2. LANDUNG: Hier wird der Mod-Status gelöscht
+
         if (onGround || inWater || isRiding) {
             if (flightData != null) {
                 PLAYER_FLIGHTS.remove(uuid);
-                player.stopFallFlying(); // Animation beenden
+                player.stopFallFlying();
             }
             PLAYER_INAIR.remove(uuid);
             return;
         }
 
-        // 3. FLUG-ERHALTUNG & SCHUTZ (Auch außerhalb der Area!)
         if (flightData != null && flightData.inFlight) {
-            // Das hier verhindert, dass Minecraft den Flug abbricht, wenn keine Elytra getragen wird
             player.startFallFlying();
 
-            // Kein Falldamage, solange dieser Status aktiv ist
             player.fallDistance = 0;
         }
 
-        // 4. START-LOGIK: Nur innerhalb einer Area möglich
         if (currentArea != null && flightData == null) {
             if (!onGround) {
                 if (!PLAYER_INAIR.containsKey(uuid)) {
@@ -157,7 +152,6 @@ public class SpawnElytraCraftattack implements ModInitializer {
 
                 long elapsed = System.currentTimeMillis() - PLAYER_INAIR.get(uuid);
                 if (elapsed >= 500) {
-                    // Flug initialisieren
                     flightData = new PlayerFlightData(currentArea.name, currentArea.maxBoosts);
                     flightData.inFlight = true;
                     PLAYER_FLIGHTS.put(uuid, flightData);
@@ -167,11 +161,9 @@ public class SpawnElytraCraftattack implements ModInitializer {
                 PLAYER_INAIR.remove(uuid);
             }
         } else if (currentArea == null && flightData == null) {
-            // Außerhalb der Area ohne aktiven Flug -> Timer weg
             PLAYER_INAIR.remove(uuid);
         }
 
-        // 5. BOOSTS
         handlePlayerBoost(player, flightData);
     }
 
