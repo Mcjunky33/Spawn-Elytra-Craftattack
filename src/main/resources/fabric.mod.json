@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "spawn-elytra-craftattack",
+  "version": "${version}",
+  "name": "Spawn Elytra Craftattack",
+  "description": "Elytra-Flight in definierten Zonen - serverseitig",
+  "authors": [
+    "Mcjunky33"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Mcjunky332",
+    "sources": "https://github.com/Mcjunky332/spawn-elytra-craftattack"
+  },
+  "license": "MIT",
+  "icon": "assets/spawn-elytra-craftattack/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.mcjunky33.SpawnElytraCraftattack"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
